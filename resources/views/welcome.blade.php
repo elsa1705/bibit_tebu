@@ -397,7 +397,7 @@
                         <a href="#">Project 3</a>
                     </div>
                 </div>
-                <div class="nav-item"><a href="#" class="nav-link">Contact</a></div>
+                <div class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact Us</a></div>
                 <div class="nav-item">
                     <button class="nav-link" tabindex="0">Pages ▾</button>
                     <div class="dropdown">

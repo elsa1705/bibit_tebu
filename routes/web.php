@@ -10,6 +10,6 @@ Route::get('/users', [\App\Http\Controllers\UserController::class, 'index']);
 
 Route::get('/contact', function () {
     return view('contact');
-});
+})->name('contact');
 
 Route::get('/services', [\App\Http\Controllers\ServiceController::class, 'index']);
