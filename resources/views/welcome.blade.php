@@ -89,20 +89,25 @@
             background: #eaf6e3;
             color: #6a9739;
         }
-        .nav-btn {
+        .cta-btn,
+        .nav-btn,
+        .about-btn,
+        .taste-section button {
             background: #ffd600;
             color: #333;
             font-weight: 700;
             border: none;
             border-radius: 8px;
-            padding: 12px 32px;
-            margin-left: 32px;
+            padding: 10px 24px;
             font-size: 1rem;
             cursor: pointer;
             box-shadow: 0 4px 16px rgba(255,214,0,0.12);
             transition: background 0.2s, color 0.2s, transform 0.2s;
         }
-        .nav-btn:hover {
+        .cta-btn:hover,
+        .nav-btn:hover,
+        .about-btn:hover,
+        .taste-section button:hover {
             background: #ffe066;
             color: #6a9739;
             transform: scale(1.05);
@@ -362,8 +367,8 @@
             font-weight: 700;
             border: none;
             border-radius: 8px;
-            padding: 18px 48px;
-            font-size: 1.18rem;
+            padding: 10px 24px;
+            font-size: 1rem;
             cursor: pointer;
             box-shadow: 0 4px 16px rgba(255,214,0,0.12);
             transition: background 0.2s, color 0.2s, transform 0.2s;
@@ -450,39 +455,38 @@
             width: 100vw;
             margin: 48px 0 0 0;
             padding: 0;
+            position: relative;
         }
         .taste-section img {
             width: 100vw;
-            height: 400px;
+            height: 15cm;
             object-fit: cover;
             display: block;
             margin: 3cm 0 0 0;
-            border-radius: 18px;
+            border-radius: 0;
+            background: #fff;
         }
         .taste-content {
-            max-width: 700px;
-            margin: -120px auto 0 auto;
-            background: rgba(255,255,255,0.92);
-            border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(106,151,57,0.10);
-            padding: 40px 32px 32px 32px;
-            position: relative;
+            position: absolute;
+            top: calc(3cm + 24px);
+            left: 32px;
+            max-width: 520px;
+            color: #222;
         }
         .taste-content h2 {
-            font-size: 2.8rem;
+            font-size: 2rem;
             font-weight: 700;
-            color: #222;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
         }
         .taste-content p {
-            font-size: 1.25rem;
+            font-size: 1.3rem;
             color: #555;
-            margin-bottom: 32px;
+            margin-bottom: 28px;
         }
         .taste-content button {
             background: #6a9739;
             color: #fff;
-            padding: 14px 38px;
+            padding: 12px 32px;
             border-radius: 8px;
             font-weight: 700;
             font-size: 1.15rem;
@@ -531,14 +535,13 @@
         <div class="hero-content">
             <h1>Organic Farming & Agriculture</h1>
             <p>Fresh, healthy, and sustainable produce for your family. Discover the best organic farming practices and products at Josiefarms.</p>
-            <a href="#" class="cta-btn">Learn More</a>
+            <a href="#" class="cta-btn" style="background:#ffd600; color:#333; font-weight:700; border:none; border-radius:8px; padding:10px 24px; font-size:1rem; cursor:pointer; box-shadow:0 4px 16px rgba(255,214,0,0.12); transition:background 0.2s, color 0.2s, transform 0.2s;">Learn More</a>
         </div>
     </section>
     <section class="features">
         <div class="features-container">
             <div class="feature-item">
                 <span class="feature-icon">
-                    <!-- Ikon daun hijau muda, lebih besar -->
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="32" cy="32" r="32" fill="#8BC34A"/>
                         <path d="M42 25C42 33 32 42 32 42C32 42 22 33 22 25C22 21.6863 24.6863 19 28 19C31.3137 19 34 21.6863 34 25Z" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -551,7 +554,6 @@
             </div>
             <div class="feature-item">
                 <span class="feature-icon">
-                    <!-- Ikon centang hijau muda, lebih besar -->
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="32" cy="32" r="32" fill="#8BC34A"/>
                         <path d="M46 24L32 44L20 32" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -564,7 +566,6 @@
             </div>
             <div class="feature-item">
                 <span class="feature-icon">
-                    <!-- Ikon market hijau muda, lebih besar -->
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="32" cy="32" r="32" fill="#8BC34A"/>
                         <rect x="20" y="30" width="24" height="12" rx="3" fill="#fff"/>
@@ -594,12 +595,32 @@
             </div>
         </div>
     </section>
-    <section class="taste-section" style="width:100vw; margin:48px 0 0 0; padding:0;">
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80" alt="Taste the Difference" style="width:100vw; height:400px; object-fit:cover; display:block; margin:3cm 0 0 0; border-radius:18px;">
-        <div style="max-width:700px; margin: -120px auto 0 auto; background:rgba(255,255,255,0.92); border-radius:18px; box-shadow:0 8px 32px rgba(106,151,57,0.10); padding:40px 32px 32px 32px; position:relative;">
-            <h2 style="font-size:2.8rem; font-weight:700; color:#222; margin-bottom:18px;">Taste the Difference, Discover True Agriculture</h2>
-            <p style="font-size:1.25rem; color:#555; margin-bottom:32px;">Malesuada elit laoreet quisque facilisi vivamus fringilla. Augue felis nostra posuere urna si mattis ultrices natoque nulla curabitur laoreet. Iaculis ligula hendrerit mollis egestas vulputate inceptos hac massa.</p>
-            <button style="background:#6a9739; color:#fff; padding:14px 38px; border-radius:8px; font-weight:700; font-size:1.15rem; box-shadow:0 4px 16px rgba(106,151,57,0.12); border:none; cursor:pointer;">Learn More</button>
+    <section class="taste-section" style="width:100vw; margin:48px 0 0 0; padding:0; position:relative;">
+        <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=1600&q=80" alt="Tanaman Daun Hijau" style="width:100vw; height:15cm; object-fit:cover; display:block; margin:3cm 0 0 0; border-radius:0; background:#fff;">
+        <div style="position:absolute; top:calc(3cm + 24px); left:calc(32px + 2.2cm); max-width:520px; color:#fff;">
+            <h2 style="font-size:2rem; font-weight:700; margin-bottom:16px;">Taste the Difference, Discover True Agriculture</h2>
+            <p style="font-size:1.3rem; color:#fff; margin-bottom:28px;">Malesuada elit laoreet quisque facilisi vivamus fringilla. Augue felis nostra posuere urna si mattis ultrices natoque nulla curabitur laoreet. Iaculis ligula hendrerit mollis egestas vulputate inceptos hac massa.</p>
+            <button style="background:#ffd600; color:#333; font-weight:700; border:none; border-radius:8px; padding:10px 24px; font-size:1rem; cursor:pointer; box-shadow:0 4px 16px rgba(255,214,0,0.12); transition:background 0.2s, color 0.2s, transform 0.2s;">Learn More</button>
+        </div>
+    </section>
+    <section class="about-gallery-section" style="width:100vw; display:flex; align-items:center; justify-content:flex-start; margin:64px 0;">
+        <div style="flex:1; max-width:520px; padding-left:120px;">
+            <h2 style="font-size:2rem; font-weight:700; color:#222; margin-bottom:18px;">Our Green Farm Gallery</h2>
+            <p style="font-size:1.15rem; color:#555; margin-bottom:32px;">Explore the beauty of our organic farm and see how we nurture nature for the best harvest. Sustainable, fresh, and green!</p>
+            <button style="background:#ffd600; color:#333; font-weight:700; border:none; border-radius:8px; padding:10px 24px; font-size:1rem; cursor:pointer; box-shadow:0 4px 16px rgba(255,214,0,0.12); transition:background 0.2s, color 0.2s, transform 0.2s;">View More</button>
+        </div>
+        <div style="display:flex; flex-direction:row; gap:0; padding-right:120px; margin-left:7cm;">
+            <div style="display:flex; flex-direction:column; gap:0;">
+                <div style="position:relative; margin-bottom:0;">
+                    <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80" alt="Orang Memegang Selada" style="width:220px; height:210px; object-fit:cover; border-radius:0; box-shadow:0 4px 24px rgba(106,151,57,0.10); display:block;">
+                </div>
+                <div style="position:relative; margin-top:-4px;">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Semprotan Organik" style="width:220px; height:210px; object-fit:cover; border-radius:0; box-shadow:0 4px 24px rgba(106,151,57,0.10); display:block;">
+                </div>
+            </div>
+            <div style="position:relative; margin-left:32px; display:flex; align-items:stretch;">
+                <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=600&q=80" alt="Perempuan Bertani" style="width:220px; height:417px; object-fit:cover; border-radius:0; box-shadow:0 4px 24px rgba(106,151,57,0.10); display:block;">
+            </div>
         </div>
     </section>
     <script>
