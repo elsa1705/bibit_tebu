@@ -1,4 +1,3 @@
-<!-- filepath: c:\laragon\www\bibit_tebu\resources\views\contact.blade.php -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
