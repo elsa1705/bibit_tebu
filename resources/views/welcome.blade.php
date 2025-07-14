@@ -505,31 +505,7 @@
             <img src="https://tebewebe.online/josiefarms/wp-content/uploads/sites/320/2025/02/JF_JosieFarms_Logo-300x50.webp" alt="JosieFarms Logo" style="height:38px;">
             <span style="font-size:2rem; font-weight:700; color:#6a9739; letter-spacing:2px;"></span>
         </div>
-        <nav>
-            <div class="nav-menu">
-                <div class="nav-item"><a href="#" class="nav-link">Home</a></div>
-                <div class="nav-item"><a href="#" class="nav-link">About Us</a></div>
-                <div class="nav-item"><a href="#" class="nav-link">Service</a></div>
-                <div class="nav-item">
-                    <button class="nav-link" tabindex="0">Project ▾</button>
-                    <div class="dropdown">
-                        <a href="#">Project 1</a>
-                        <a href="#">Project 2</a>
-                        <a href="#">Project 3</a>
-                    </div>
-                </div>
-                <div class="nav-item"><a href="#" class="nav-link">Contact</a></div>
-                <div class="nav-item">
-                    <button class="nav-link" tabindex="0">Pages ▾</button>
-                    <div class="dropdown">
-                        <a href="#">Page 1</a>
-                        <a href="#">Page 2</a>
-                        <a href="#">Page 3</a>
-                    </div>
-                </div>
-                <button class="nav-btn">Get Started</button>
-            </div>
-        </nav>
+        @include('partials.navbar')
     </header>
     <section class="hero">
         <div class="hero-bg">
