@@ -118,7 +118,7 @@
             <a href="#">About Us</a>
             <a href="#">Services</a>
             <a href="#">Projects</a>
-            <a href="#">Contact Us</a>
+            <a href="/contact">Contact Us</a>
         </div>
         <a href="/users"><button class="navbar-btn">Get In Touch</button></a>
     </nav>
@@ -129,6 +129,48 @@
             <div class="hero-desc">Semper sit imperdiet bibendum felis fames ante sed suscipit. Solusi modern untuk manajemen data pertanian dan user.</div>
         </div>
         <div class="hero-img"></div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" style="background:#f7f7f7; padding:60px 0;">
+      <div class="container" style="max-width:1200px; margin:auto;">
+        <div style="text-align:center; margin-bottom:40px;">
+          <h2 style="font-size:2.5rem; color:#3d5a1a; margin-bottom:10px;">Contact Us</h2>
+          <p style="color:#666; font-size:1.1rem;">Have questions or want to get in touch? Fill out the form below and our team will get back to you soon.</p>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:40px;">
+          <!-- Contact Info -->
+          <div style="flex:1; min-width:300px;">
+            <div style="margin-bottom:30px;">
+              <h4 style="color:#3d5a1a;">Address</h4>
+              <p style="color:#666;">Jl. Contoh No. 123, Kota Anda, Indonesia</p>
+            </div>
+            <div style="margin-bottom:30px;">
+              <h4 style="color:#3d5a1a;">Phone</h4>
+              <p style="color:#666;">+62 812-3456-7890</p>
+            </div>
+            <div>
+              <h4 style="color:#3d5a1a;">Email</h4>
+              <p style="color:#666;">info@bibittebu.com</p>
+            </div>
+          </div>
+          <!-- Contact Form -->
+          <div style="flex:2; min-width:300px; background:#fff; padding:30px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+            <form>
+              <div style="margin-bottom:20px;">
+                <input type="text" name="name" placeholder="Your Name" required style="width:100%; padding:12px; border:1px solid #ddd; border-radius:4px;">
+              </div>
+              <div style="margin-bottom:20px;">
+                <input type="email" name="email" placeholder="Your Email" required style="width:100%; padding:12px; border:1px solid #ddd; border-radius:4px;">
+              </div>
+              <div style="margin-bottom:20px;">
+                <textarea name="message" placeholder="Your Message" rows="5" required style="width:100%; padding:12px; border:1px solid #ddd; border-radius:4px;"></textarea>
+              </div>
+              <button type="submit" style="background:#3d5a1a; color:#fff; padding:12px 32px; border:none; border-radius:4px; font-size:1rem; cursor:pointer;">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 </body>
 </html>
