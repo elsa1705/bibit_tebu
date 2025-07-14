@@ -383,11 +383,17 @@
 </head>
 <body>
     <header>
-        <div class="logo">Josiefarms</div>
+        <div class="logo" style="display:flex;align-items:center;gap:12px;">
+            <img src="https://tebewebe.online/josiefarms/wp-content/uploads/sites/320/2025/02/JF_JosieFarms_Logo-300x50.webp" alt="JosieFarms Logo" style="height:38px;">
+            <span style="font-size:2rem; font-weight:700; color:#6a9739; letter-spacing:2px;"></span>
+        </div>
         <nav>
             <div class="nav-menu">
-                <div class="nav-item"><a href="#" class="nav-link">Home</a></div>
+                <div class="nav-item"><a href="/" class="nav-link">Home</a></div>
                 <div class="nav-item"><a href="#" class="nav-link">About</a></div>
+                <div class="nav-item"><a href="/services" class="nav-link">
+                    Services
+                </a></div>
                 <div class="nav-item">
                     <button class="nav-link" tabindex="0">Project ▾</button>
                     <div class="dropdown">
@@ -415,53 +421,37 @@
             <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80" alt="Organic Farm">
         </div>
         <div class="hero-content">
-            <h1>Organic Farming & Agriculture</h1>
-            <p>Fresh, healthy, and sustainable produce for your family. Discover the best organic farming practices and products at Josiefarms.</p>
-            <a href="#" class="cta-btn">Learn More</a>
+            <h1>Our Services</h1>
+            <p>Unlocking the secrets of sustainable agriculture dictumst pede lorem sollicitudin suspendisse.</p>
         </div>
     </section>
     <section class="features">
         <div class="features-container">
             <div class="feature-item">
                 <span class="feature-icon">
-                    <!-- Ikon daun hijau muda, lebih besar -->
-                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="32" cy="32" r="32" fill="#8BC34A"/>
-                        <path d="M42 25C42 33 32 42 32 42C32 42 22 33 22 25C22 21.6863 24.6863 19 28 19C31.3137 19 34 21.6863 34 25Z" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Quality Standards" style="width:80px;height:80px;border-radius:12px;object-fit:cover;">
                 </span>
                 <div class="feature-text">
-                    <h2>Natural Ingredients</h2>
-                    <p>Only the best natural ingredients for your family.</p>
+                    <h2>Quality Standards</h2>
+                    <p>Unlocking the secrets of sustainable agriculture dictumst pede lorem sollicitudin suspendisse.</p>
                 </div>
             </div>
             <div class="feature-item">
                 <span class="feature-icon">
-                    <!-- Ikon centang hijau muda, lebih besar -->
-                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="32" cy="32" r="32" fill="#8BC34A"/>
-                        <path d="M46 24L32 44L20 32" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Organic Services" style="width:80px;height:80px;border-radius:12px;object-fit:cover;">
                 </span>
                 <div class="feature-text">
-                    <h2>Best Quality</h2>
-                    <p>Fresh and high quality produce every time.</p>
+                    <h2>Organic Services</h2>
+                    <p>Semper sit imperdiet bibendum felis fames ante sed suscipit.</p>
                 </div>
             </div>
             <div class="feature-item">
                 <span class="feature-icon">
-                    <!-- Ikon market hijau muda, lebih besar -->
-                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="32" cy="32" r="32" fill="#8BC34A"/>
-                        <rect x="20" y="30" width="24" height="12" rx="3" fill="#fff"/>
-                        <rect x="18" y="26" width="28" height="7" rx="2" fill="#fff"/>
-                        <rect x="26" y="42" width="5" height="5" rx="1.2" fill="#8BC34A"/>
-                        <rect x="35" y="42" width="5" height="5" rx="1.2" fill="#8BC34A"/>
-                    </svg>
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Agriculture Leader" style="width:80px;height:80px;border-radius:12px;object-fit:cover;">
                 </span>
                 <div class="feature-text">
-                    <h2>Organic Food Market</h2>
-                    <p>Healthy organic food for everyone.</p>
+                    <h2>Agriculture Leader</h2>
+                    <p>Established Since 1992</p>
                 </div>
             </div>
         </div>
@@ -479,9 +469,88 @@
             </div>
         </div>
     </section>
-    <script>
-        // Animasi sudah otomatis berjalan dengan CSS keyframes
-    </script>
-    <!-- Section berikutnya bisa ditambahkan sesuai kebutuhan -->
+    <section class="services-section" style="background:#fff; border-radius:18px; margin:48px auto; max-width:1200px; box-shadow:0 4px 24px rgba(0,0,0,0.08); display:flex; align-items:center; padding:48px 32px; gap:48px;">
+        <div class="services-text" style="flex:1;">
+            <div style="color:#8BC34A; font-weight:700; font-size:1.2rem; margin-bottom:12px;">Our Services</div>
+            <h1 style="font-size:2.8rem; font-weight:700; color:#222; margin-bottom:24px;">Where Farming Meets Excellence</h1>
+            <p style="font-size:1.15rem; color:#555; margin-bottom:18px;">Pellentesque aptent hendrerit iaculis dignissim facilisi tempus. Tristique efficitur ornare eros sit conubia purus sagittis. Sem tellus dignissim metus sapien primis porttitor porta pede nec dignissim facilisi.</p>
+            <p style="font-size:1.15rem; color:#555; margin-bottom:32px;">Pede nascetur malesuada tempus vel accumsan aliquam porta. Integer nec suscipit netus amet dolor ligula in cubilia.</p>
+            <a href="#" style="display:inline-block; background:#ffd600; color:#222; font-weight:700; border-radius:32px; padding:16px 38px; font-size:1.15rem; text-decoration:none; box-shadow:0 4px 16px rgba(255,214,0,0.12); transition:background 0.2s;">Discover More</a>
+        </div>
+        <div class="services-images" style="flex:1; display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:18px;">
+            <div style="grid-column:1/3; grid-row:1/2; position:relative;">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Quality Standards" style="width:100%; height:180px; object-fit:cover; border-radius:16px;">
+                <div style="position:absolute;top:16px;left:16px;background:#fff;padding:6px 18px;border-radius:24px;color:#6a9739;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,0.08);font-size:1rem;">✔ Quality Standards</div>
+            </div>
+            <div style="grid-column:1/2; grid-row:2/3; position:relative;">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Organic Services" style="width:100%; height:120px; object-fit:cover; border-radius:16px;">
+                <div style="position:absolute;bottom:12px;left:12px;background:#fff;padding:6px 18px;border-radius:24px;color:#6a9739;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,0.08);font-size:1rem;">✔ Organic Services</div>
+            </div>
+            <div style="grid-column:2/3; grid-row:2/3; position:relative;">
+                <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Agriculture Leader" style="width:100%; height:120px; object-fit:cover; border-radius:16px;">
+                <div style="position:absolute;bottom:12px;left:12px;background:#fff;padding:6px 18px;border-radius:24px;color:#6a9739;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,0.08);font-size:1rem;">✔ Agriculture Leader</div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background:#2d4636; color:#fff; padding:56px 0 0 0; margin-top:64px; font-family:'Montserrat', Arial, sans-serif;">
+        <div style="max-width:1400px; margin:auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:32px; padding:0 48px;">
+            <div style="flex:1; min-width:220px;">
+                <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+                    <img src="https://tebewebe.online/josiefarms/wp-content/uploads/sites/320/2025/02/JF_JosieFarms_Logo-300x50.webp" alt="JosieFarms Logo" style="height:38px;">
+                </div>
+                <div style="margin-bottom:24px; color:#cfd8dc; font-size:14px;">Velit montes quisque eros ullamcorper nisl interdum tristique. Congue elit donec est per ultrices quisque.</div>
+                <div style="margin-bottom:12px; display:flex; align-items:center; gap:10px; color:#cfd8dc; font-size:14px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/484/484167.png" alt="Location" style="height:18px;vertical-align:middle;filter:invert(56%) sepia(98%) saturate(453%) hue-rotate(56deg) brightness(92%) contrast(92%);"> 789 Oak St, Smalltown, TX 23456, US
+                </div>
+                <div style="margin-bottom:12px; display:flex; align-items:center; gap:10px; color:#cfd8dc; font-size:14px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" style="height:18px;vertical-align:middle;filter:invert(56%) sepia(98%) saturate(453%) hue-rotate(56deg) brightness(92%) contrast(92%);"> hello@josiefarms.com
+                </div>
+                <div style="margin-bottom:18px; display:flex; align-items:center; gap:10px; color:#cfd8dc; font-size:14px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone" style="height:18px;vertical-align:middle;filter:invert(56%) sepia(98%) saturate(453%) hue-rotate(56deg) brightness(92%) contrast(92%);"> +1 (555) 987-6543
+                </div>
+            </div>
+            <div style="flex:1; min-width:180px;">
+                <h3 style="color:#fff; font-size:1.32rem; font-weight:700; margin-bottom:18px; font-family:'Montserrat', Arial, sans-serif;">Services</h3>
+                <div style="color:#cfd8dc; font-size:14px; line-height:2; font-family:'Montserrat', Arial, sans-serif;">
+                    Farm Supplies & Equipment<br>
+                    Agro Machinery Solutions<br>
+                    Garden Tillage Services<br>
+                    Pest Control Management<br>
+                    Farm Consulting Services<br>
+                    Organic Farm Certification
+                </div>
+            </div>
+            <div style="flex:1; min-width:180px;">
+                <h3 style="color:#fff; font-size:1.32rem; font-weight:700; margin-bottom:18px; font-family:'Montserrat', Arial, sans-serif;">Quick Links</h3>
+                <div style="color:#cfd8dc; font-size:14px; line-height:2; font-family:'Montserrat', Arial, sans-serif;">
+                    <a href="#about" style="color:#cfd8dc; text-decoration:none;">About Us</a><br>
+                    <a href="#projects" style="color:#cfd8dc; text-decoration:none;">Our Projects</a><br>
+                    <a href="#events" style="color:#cfd8dc; text-decoration:none;">Upcoming Events</a><br>
+                    <a href="#careers" style="color:#cfd8dc; text-decoration:none;">Careers</a><br>
+                    <a href="#news" style="color:#cfd8dc; text-decoration:none;">News & Articles</a><br>
+                    <a href="#legal" style="color:#cfd8dc; text-decoration:none;">Legal Notice</a>
+                </div>
+            </div>
+            <div style="flex:1; min-width:260px;">
+                <h3 style="color:#fff; font-size:1.32rem; font-weight:700; margin-bottom:18px; font-family:'Montserrat', Arial, sans-serif;">Subscribe Newsletter</h3>
+                <div style="color:#cfd8dc; font-size:14px; margin-bottom:18px; font-family:'Montserrat', Arial, sans-serif;">Join 60,000+ Subscribers and get a new discount coupon every saturday</div>
+                <form style="display:flex; flex-direction:column; gap:16px;">
+                <input type="email" placeholder="Enter your email" style="padding:14px 18px; border-radius:32px; border:none; font-size:14px; background:#fff; color:#333; font-family:'Montserrat', Arial, sans-serif;">
+                    <button type="submit" style="background:#ffd600; color:#222; font-weight:700; border:none; border-radius:32px; padding:14px 0; font-size:14px; cursor:pointer; box-shadow:0 4px 16px rgba(255,214,0,0.12); font-family:'Montserrat', Arial, sans-serif;">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <div style="border-top:1px solid #395a46; margin-top:38px; padding:18px 0 12px 0; display:flex; align-items:center; justify-content:space-between; gap:14px; color:#cfd8dc; font-size:14px; font-family:'Montserrat', Arial, sans-serif; padding-left: 38px; padding-right: 38px;">
+    <div style="display:flex; align-items:center; gap:18px;">
+        <a href="#" style="color:#8BC34A;"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" style="height:18px;filter:invert(56%) sepia(98%) saturate(453%) hue-rotate(56deg) brightness(92%) contrast(92%);"></a>
+        <a href="#" style="color:#8BC34A;"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/threads.svg" alt="Threads" style="height:18px;filter:invert(56%) sepia(98%) saturate(453%) hue-rotate(56deg) brightness(92%) contrast(92%);"></a>
+        <a href="#" style="color:#8BC34A;"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="height:18px;filter:invert(56%) sepia(98%) saturate(453%) hue-rotate(56deg) brightness(92%) contrast(92%);"></a>
+        <a href="#" style="color:#8BC34A;"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" style="height:18px;filter:invert(56%) sepia(98%) saturate(453%) hue-rotate(56deg) brightness(92%) contrast(92%);"></a>
+        <a href="#" style="color:#8BC34A;"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" style="height:18px;filter:invert(56%) sepia(98%) saturate(453%) hue-rotate(56deg) brightness(92%) contrast(92%);"></a>
+    </div>
+    <div>Copyright &copy; 2025 JosieFarms by TBWSThemes. All rights reserved</div>
+</div>
+    </footer>
 </body>
 </html>
