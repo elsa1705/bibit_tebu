@@ -12,20 +12,6 @@ class UserRoleSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\User::updateOrCreate([
-            'email' => 'admin@example.com',
-        ], [
-            'name' => 'Admin User',
-            'password' => bcrypt('password'),
-            'role' => 'admin',
-        ]);
-
-        \App\Models\User::updateOrCreate([
-            'email' => 'user@example.com',
-        ], [
-            'name' => 'Regular User',
-            'password' => bcrypt('password'),
-            'role' => 'user',
-        ]);
+        //
     }
 }
