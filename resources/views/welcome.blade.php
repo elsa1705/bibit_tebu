@@ -9,11 +9,7 @@
         body {
             margin: 0;
             font-family: 'Montserrat', Arial, sans-serif;
-<<<<<<< HEAD
-            background: #f7f7f7;
-=======
             background: #fff; /* ubah background jadi putih total */
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
             color: #333;
         }
         header {
@@ -93,38 +89,25 @@
             background: #eaf6e3;
             color: #6a9739;
         }
-<<<<<<< HEAD
-        .nav-btn {
-=======
         .cta-btn,
         .nav-btn,
         .about-btn,
         .taste-section button {
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
             background: #ffd600;
             color: #333;
             font-weight: 700;
             border: none;
             border-radius: 8px;
-<<<<<<< HEAD
-            padding: 12px 32px;
-            margin-left: 32px;
-=======
             padding: 10px 24px;
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
             font-size: 1rem;
             cursor: pointer;
             box-shadow: 0 4px 16px rgba(255,214,0,0.12);
             transition: background 0.2s, color 0.2s, transform 0.2s;
         }
-<<<<<<< HEAD
-        .nav-btn:hover {
-=======
         .cta-btn:hover,
         .nav-btn:hover,
         .about-btn:hover,
         .taste-section button:hover {
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
             background: #ffe066;
             color: #6a9739;
             transform: scale(1.05);
@@ -172,14 +155,8 @@
             color: #fff;
             text-align: left;
             padding: 40px;
-<<<<<<< HEAD
-            background: rgba(106,151,57,0.10);
-            border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(106,151,57,0.10);
-=======
             background: none;
             box-shadow: none;
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
             margin-left: 5vw;
         }
         .hero-content h1 {
@@ -232,19 +209,11 @@
         }
         .features-container {
             display: flex;
-<<<<<<< HEAD
-            gap: 64px;
-            max-width: 1200px;
-            width: 100%;
-            justify-content: flex-start;
-            margin-left: 128px;
-=======
             gap: 3cm;
             width: 100%;
             margin-left: 120px;
             margin-right: 0;
             max-width: none;
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
             align-items: flex-start;
         }
         .feature-item {
@@ -257,13 +226,6 @@
             text-align: left;
             display: flex;
             align-items: flex-start;
-<<<<<<< HEAD
-            gap: 18px;
-            justify-content: flex-start;
-            max-width: 320px;
-        }
-        .feature-icon {
-=======
             gap: 8px;
             justify-content: flex-start;
             max-width: 320px;
@@ -282,18 +244,11 @@
             justify-content: flex-end !important;
         }
         .feature-item .feature-icon {
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
             min-width: 80px;
             min-height: 80px;
-<<<<<<< HEAD
-        }
-        .feature-icon svg {
-            width: 80px;
-            height: 80px;
-=======
             margin-bottom: 0;
         }
         .feature-item .feature-text {
@@ -318,7 +273,6 @@
         .feature-icon svg {
             width: 64px;
             height: 64px;
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
         }
         .feature-text h2 {
             color: #222;
@@ -327,18 +281,6 @@
             font-weight: 700;
             white-space: nowrap;
         }
-<<<<<<< HEAD
-        .feature-text p {
-            color: #555;
-            font-size: 0.97rem;
-            margin: 0;
-        }
-        .about-section {
-            background: #fff;
-            padding: 64px 0 32px 0;
-            display: flex;
-            justify-content: flex-start;
-=======
         .feature-item:nth-child(2) .feature-text h2,
         .feature-item:nth-child(2) .feature-icon svg {
             font-size: 1.18rem;
@@ -369,17 +311,10 @@
             margin-top: 32px;
             background: #fff;
             border-top: none;
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
         }
         .about-container {
             display: flex;
             gap: 56px;
-<<<<<<< HEAD
-            max-width: 1300px;
-            width: 100%;
-            align-items: center;
-            justify-content: flex-start;
-=======
             align-items: flex-start;
             max-width: 1200px;
             margin-left: 120px;
@@ -393,25 +328,15 @@
             border-radius: 1px;
             margin-left: 120px;
             margin-bottom: 32px;
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
         }
         .about-images-row {
             display: flex;
             flex-direction: row;
-<<<<<<< HEAD
-            gap: 32px;
-            align-items: flex-start;
-            margin-left: 168px; /* 7cm dari pojok kiri */
-        }
-        .about-img {
-            width: 168px; /* 7cm = 168px */
-=======
             align-items: flex-start;
             gap: 1cm; /* jarak 1cm antara foto kiri dan kanan */
         }
         .about-img {
             width: 8cm;
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
             height: 480px;
             object-fit: cover;
             border-radius: 0;
@@ -427,11 +352,7 @@
         }
         .about-content h2 {
             color: #222;
-<<<<<<< HEAD
-            font-size: 2.6rem;
-=======
             font-size: 1.73rem; /* 2/3 dari 2.6rem */
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
             margin-bottom: 22px;
             font-weight: 700;
         }
@@ -446,13 +367,8 @@
             font-weight: 700;
             border: none;
             border-radius: 8px;
-<<<<<<< HEAD
-            padding: 18px 48px;
-            font-size: 1.18rem;
-=======
             padding: 10px 24px;
             font-size: 1rem;
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
             cursor: pointer;
             box-shadow: 0 4px 16px rgba(255,214,0,0.12);
             transition: background 0.2s, color 0.2s, transform 0.2s;
@@ -528,8 +444,6 @@
                 max-width: 98vw;
             }
         }
-<<<<<<< HEAD
-=======
         .feature-text p {
             color: #555;
             font-size: 0.97rem;
@@ -583,19 +497,14 @@
         .taste-content button:hover {
             background: #4e7c2c;
         }
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
     </style>
 </head>
 <body>
     <header>
-<<<<<<< HEAD
-        <div class="logo">Josiefarms</div>
-=======
         <div class="logo" style="display:flex;align-items:center;gap:12px;">
             <img src="https://tebewebe.online/josiefarms/wp-content/uploads/sites/320/2025/02/JF_JosieFarms_Logo-300x50.webp" alt="JosieFarms Logo" style="height:38px;">
             <span style="font-size:2rem; font-weight:700; color:#6a9739; letter-spacing:2px;"></span>
         </div>
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
         <nav>
             <div class="nav-menu">
                 <div class="nav-item"><a href="#" class="nav-link">Home</a></div>
@@ -609,11 +518,7 @@
                         <a href="#">Project 3</a>
                     </div>
                 </div>
-<<<<<<< HEAD
-                <div class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact Us</a></div>
-=======
                 <div class="nav-item"><a href="#" class="nav-link">Contact</a></div>
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
                 <div class="nav-item">
                     <button class="nav-link" tabindex="0">Pages ▾</button>
                     <div class="dropdown">
@@ -633,65 +538,37 @@
         <div class="hero-content">
             <h1>Organic Farming & Agriculture</h1>
             <p>Fresh, healthy, and sustainable produce for your family. Discover the best organic farming practices and products at Josiefarms.</p>
-<<<<<<< HEAD
-            <a href="#" class="cta-btn">Learn More</a>
-=======
             <a href="#" class="cta-btn" style="background:#ffd600; color:#333; font-weight:700; border:none; border-radius:8px; padding:10px 24px; font-size:1rem; cursor:pointer; box-shadow:0 4px 16px rgba(255,214,0,0.12); transition:background 0.2s, color 0.2s, transform 0.2s;">Learn More</a>
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
         </div>
     </section>
     <section class="features">
         <div class="features-container">
             <div class="feature-item">
                 <span class="feature-icon">
-<<<<<<< HEAD
-                    <!-- Ikon daun hijau muda, lebih besar -->
-=======
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="32" cy="32" r="32" fill="#8BC34A"/>
                         <path d="M42 25C42 33 32 42 32 42C32 42 22 33 22 25C22 21.6863 24.6863 19 28 19C31.3137 19 34 21.6863 34 25Z" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </span>
-<<<<<<< HEAD
-                <div class="feature-text">
-                    <h2>Natural Ingredients</h2>
-                    <p>Only the best natural ingredients for your family.</p>
-=======
                 <div class="feature-text" style="text-align:left;">
                     <h2 style="margin-bottom:4px;">Natural Ingredients</h2>
                     <p style="text-align:left;">Only the best natural ingredients<br>for your family.</p>
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
                 </div>
             </div>
             <div class="feature-item">
                 <span class="feature-icon">
-<<<<<<< HEAD
-                    <!-- Ikon centang hijau muda, lebih besar -->
-=======
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="32" cy="32" r="32" fill="#8BC34A"/>
                         <path d="M46 24L32 44L20 32" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </span>
-<<<<<<< HEAD
-                <div class="feature-text">
-                    <h2>Best Quality</h2>
-                    <p>Fresh and high quality produce every time.</p>
-=======
                 <div class="feature-text" style="text-align:left;">
                     <h2 style="margin-bottom:0;">Best Quality</h2>
                     <p style="text-align:left; line-height:0.8; margin-top:-32px;">Fresh and high quality produce<br>every time.</p>
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
                 </div>
             </div>
             <div class="feature-item">
                 <span class="feature-icon">
-<<<<<<< HEAD
-                    <!-- Ikon market hijau muda, lebih besar -->
-=======
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="32" cy="32" r="32" fill="#8BC34A"/>
                         <rect x="20" y="30" width="24" height="12" rx="3" fill="#fff"/>
@@ -700,23 +577,14 @@
                         <rect x="35" y="42" width="5" height="5" rx="1.2" fill="#8BC34A"/>
                     </svg>
                 </span>
-<<<<<<< HEAD
-                <div class="feature-text">
-                    <h2>Organic Food Market</h2>
-                    <p>Healthy organic food for everyone.</p>
-=======
                 <div class="feature-text" style="text-align:left;">
                     <h2 style="margin-bottom:0;">Organic Food Market</h2>
                     <p style="text-align:left; line-height:0.8; margin-top:-32px;">Healthy organic food<br>for everyone.</p>
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
                 </div>
             </div>
         </div>
     </section>
-<<<<<<< HEAD
-=======
     <div class="nature-divider"></div>
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
     <section class="about-section">
         <div class="about-container">
             <div class="about-images-row">
@@ -730,8 +598,6 @@
             </div>
         </div>
     </section>
-<<<<<<< HEAD
-=======
     <section class="taste-section" style="width:100vw; margin:48px 0 0 0; padding:0; position:relative;">
         <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=1600&q=80" alt="Tanaman Daun Hijau" style="width:100vw; height:15cm; object-fit:cover; display:block; margin:3cm 0 0 0; border-radius:0; background:#fff;">
         <div style="position:absolute; top:calc(3cm + 24px); left:calc(32px + 2.2cm); max-width:520px; color:#fff;">
@@ -760,13 +626,10 @@
             </div>
         </div>
     </section>
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
     <script>
         // Animasi sudah otomatis berjalan dengan CSS keyframes
     </script>
     <!-- Section berikutnya bisa ditambahkan sesuai kebutuhan -->
-<<<<<<< HEAD
-=======
     <section class="services-section" style="background:#fff; border-radius:18px; margin:48px auto; max-width:1200px; box-shadow:0 4px 24px rgba(0,0,0,0.08); display:flex; align-items:center; padding:48px 32px; gap:48px;">
         <div class="services-text" style="flex:1;">
             <div style="color:#8BC34A; font-weight:700; font-size:1.2rem; margin-bottom:12px;">Our Services</div>
@@ -850,6 +713,5 @@
     <div>Copyright &copy; 2025 JosieFarms by TBWSThemes. All rights reserved</div>
 </div>
     </footer>
->>>>>>> 3b6255a30fcfc401b7ba6a7a21dead40fdab71f0
 </body>
 </html>
