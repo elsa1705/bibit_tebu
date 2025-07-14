@@ -9,7 +9,7 @@
         body {
             margin: 0;
             font-family: 'Montserrat', Arial, sans-serif;
-            background: #f7f7f7;
+            background: #fff; /* ubah background jadi putih total */
             color: #333;
         }
         header {
@@ -150,9 +150,8 @@
             color: #fff;
             text-align: left;
             padding: 40px;
-            background: rgba(106,151,57,0.10);
-            border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(106,151,57,0.10);
+            background: none;
+            box-shadow: none;
             margin-left: 5vw;
         }
         .hero-content h1 {
@@ -205,11 +204,11 @@
         }
         .features-container {
             display: flex;
-            gap: 64px;
-            max-width: 1200px;
+            gap: 3cm;
             width: 100%;
-            justify-content: flex-start;
-            margin-left: 128px;
+            margin-left: 120px;
+            margin-right: 0;
+            max-width: none;
             align-items: flex-start;
         }
         .feature-item {
@@ -222,20 +221,53 @@
             text-align: left;
             display: flex;
             align-items: flex-start;
-            gap: 18px;
+            gap: 8px;
             justify-content: flex-start;
             max-width: 320px;
+            flex-direction: row;
         }
-        .feature-icon {
+        .feature-item:nth-child(1) {
+            justify-content: flex-start;
+        }
+        .feature-item:nth-child(2) {
+            margin-left: 2cm !important;
+            margin-right: 3cm !important;
+        }
+        .feature-item:nth-child(3) {
+            margin-left: auto !important;
+            margin-right: 2cm !important;
+            justify-content: flex-end !important;
+        }
+        .feature-item .feature-icon {
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
             min-width: 80px;
             min-height: 80px;
+            margin-bottom: 0;
+        }
+        .feature-item .feature-text {
+            text-align: left;
+        }
+        .feature-item:nth-child(2),
+        .feature-item:nth-child(3) {
+            justify-content: flex-start !important;
+            align-items: flex-start !important;
+            flex-direction: row !important;
+        }
+        .feature-item:nth-child(2) .feature-icon,
+        .feature-item:nth-child(3) .feature-icon {
+            justify-content: flex-start !important;
+            align-items: flex-start !important;
+            margin-bottom: 0 !important;
+        }
+        .feature-item:nth-child(2) .feature-text,
+        .feature-item:nth-child(3) .feature-text {
+            text-align: left !important;
         }
         .feature-icon svg {
-            width: 80px;
-            height: 80px;
+            width: 64px;
+            height: 64px;
         }
         .feature-text h2 {
             color: #222;
@@ -244,34 +276,62 @@
             font-weight: 700;
             white-space: nowrap;
         }
-        .feature-text p {
-            color: #555;
-            font-size: 0.97rem;
-            margin: 0;
+        .feature-item:nth-child(2) .feature-text h2,
+        .feature-item:nth-child(2) .feature-icon svg {
+            font-size: 1.18rem;
+            width: 64px;
+            height: 64px;
+        }
+        .feature-item:nth-child(3) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .feature-item:nth-child(3) .feature-icon {
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8px;
+            margin-left: -2cm !important;
+        }
+        .feature-item:nth-child(3) .feature-text {
+            text-align: center;
+        }
+        .feature-item:nth-child(3) .feature-text h2,
+        .feature-item:nth-child(3) .feature-icon svg {
+            font-size: 1.18rem;
+            width: 64px;
+            height: 64px;
         }
         .about-section {
+            margin-top: 32px;
             background: #fff;
-            padding: 64px 0 32px 0;
-            display: flex;
-            justify-content: flex-start;
+            border-top: none;
         }
         .about-container {
             display: flex;
             gap: 56px;
-            max-width: 1300px;
-            width: 100%;
-            align-items: center;
-            justify-content: flex-start;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin-left: 120px;
+            position: relative;
+        }
+        .nature-divider {
+            width: calc(100% - 120px - 3.5cm); /* margin kiri + margin kanan organic, penyesuaian agar pas di bawah huruf 't' */
+            max-width: none;
+            height: 2px;
+            background: #8BC34A;
+            border-radius: 1px;
+            margin-left: 120px;
+            margin-bottom: 32px;
         }
         .about-images-row {
             display: flex;
             flex-direction: row;
-            gap: 32px;
             align-items: flex-start;
-            margin-left: 168px; /* 7cm dari pojok kiri */
+            gap: 1cm; /* jarak 1cm antara foto kiri dan kanan */
         }
         .about-img {
-            width: 168px; /* 7cm = 168px */
+            width: 8cm;
             height: 480px;
             object-fit: cover;
             border-radius: 0;
@@ -287,7 +347,7 @@
         }
         .about-content h2 {
             color: #222;
-            font-size: 2.6rem;
+            font-size: 1.73rem; /* 2/3 dari 2.6rem */
             margin-bottom: 22px;
             font-weight: 700;
         }
@@ -379,6 +439,60 @@
                 max-width: 98vw;
             }
         }
+        .feature-text p {
+            color: #555;
+            font-size: 0.97rem;
+            margin: 0;
+            white-space: nowrap;
+            text-align: right;
+        }
+        .taste-section {
+            width: 100vw;
+            margin: 48px 0 0 0;
+            padding: 0;
+        }
+        .taste-section img {
+            width: 100vw;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+            margin: 3cm 0 0 0;
+            border-radius: 18px;
+        }
+        .taste-content {
+            max-width: 700px;
+            margin: -120px auto 0 auto;
+            background: rgba(255,255,255,0.92);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(106,151,57,0.10);
+            padding: 40px 32px 32px 32px;
+            position: relative;
+        }
+        .taste-content h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 18px;
+        }
+        .taste-content p {
+            font-size: 1.25rem;
+            color: #555;
+            margin-bottom: 32px;
+        }
+        .taste-content button {
+            background: #6a9739;
+            color: #fff;
+            padding: 14px 38px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            box-shadow: 0 4px 16px rgba(106,151,57,0.12);
+            border: none;
+            cursor: pointer;
+        }
+        .taste-content button:hover {
+            background: #4e7c2c;
+        }
     </style>
 </head>
 <body>
@@ -430,9 +544,9 @@
                         <path d="M42 25C42 33 32 42 32 42C32 42 22 33 22 25C22 21.6863 24.6863 19 28 19C31.3137 19 34 21.6863 34 25Z" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </span>
-                <div class="feature-text">
-                    <h2>Natural Ingredients</h2>
-                    <p>Only the best natural ingredients for your family.</p>
+                <div class="feature-text" style="text-align:left;">
+                    <h2 style="margin-bottom:4px;">Natural Ingredients</h2>
+                    <p style="text-align:left;">Only the best natural ingredients<br>for your family.</p>
                 </div>
             </div>
             <div class="feature-item">
@@ -443,9 +557,9 @@
                         <path d="M46 24L32 44L20 32" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </span>
-                <div class="feature-text">
-                    <h2>Best Quality</h2>
-                    <p>Fresh and high quality produce every time.</p>
+                <div class="feature-text" style="text-align:left;">
+                    <h2 style="margin-bottom:0;">Best Quality</h2>
+                    <p style="text-align:left; line-height:0.8; margin-top:-32px;">Fresh and high quality produce<br>every time.</p>
                 </div>
             </div>
             <div class="feature-item">
@@ -459,13 +573,14 @@
                         <rect x="35" y="42" width="5" height="5" rx="1.2" fill="#8BC34A"/>
                     </svg>
                 </span>
-                <div class="feature-text">
-                    <h2>Organic Food Market</h2>
-                    <p>Healthy organic food for everyone.</p>
+                <div class="feature-text" style="text-align:left;">
+                    <h2 style="margin-bottom:0;">Organic Food Market</h2>
+                    <p style="text-align:left; line-height:0.8; margin-top:-32px;">Healthy organic food<br>for everyone.</p>
                 </div>
             </div>
         </div>
     </section>
+    <div class="nature-divider"></div>
     <section class="about-section">
         <div class="about-container">
             <div class="about-images-row">
@@ -477,6 +592,14 @@
                 <p>We provide the freshest organic produce, grown with care and passion. Our farms use sustainable methods to ensure quality and health for your family.</p>
                 <button class="about-btn">Learn More</button>
             </div>
+        </div>
+    </section>
+    <section class="taste-section" style="width:100vw; margin:48px 0 0 0; padding:0;">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80" alt="Taste the Difference" style="width:100vw; height:400px; object-fit:cover; display:block; margin:3cm 0 0 0; border-radius:18px;">
+        <div style="max-width:700px; margin: -120px auto 0 auto; background:rgba(255,255,255,0.92); border-radius:18px; box-shadow:0 8px 32px rgba(106,151,57,0.10); padding:40px 32px 32px 32px; position:relative;">
+            <h2 style="font-size:2.8rem; font-weight:700; color:#222; margin-bottom:18px;">Taste the Difference, Discover True Agriculture</h2>
+            <p style="font-size:1.25rem; color:#555; margin-bottom:32px;">Malesuada elit laoreet quisque facilisi vivamus fringilla. Augue felis nostra posuere urna si mattis ultrices natoque nulla curabitur laoreet. Iaculis ligula hendrerit mollis egestas vulputate inceptos hac massa.</p>
+            <button style="background:#6a9739; color:#fff; padding:14px 38px; border-radius:8px; font-weight:700; font-size:1.15rem; box-shadow:0 4px 16px rgba(106,151,57,0.12); border:none; cursor:pointer;">Learn More</button>
         </div>
     </section>
     <script>
