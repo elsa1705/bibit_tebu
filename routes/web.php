@@ -6,7 +6,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/contact', function () {
     return view('contact');
-});
+})->name('contact');
+
 Route::get('/services', [\App\Http\Controllers\ServiceController::class, 'index']);
