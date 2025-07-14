@@ -387,7 +387,8 @@
         <nav>
             <div class="nav-menu">
                 <div class="nav-item"><a href="#" class="nav-link">Home</a></div>
-                <div class="nav-item"><a href="#" class="nav-link">About</a></div>
+                <div class="nav-item"><a href="#" class="nav-link">About Us</a></div>
+                <div class="nav-item"><a href="#" class="nav-link">Service</a></div>
                 <div class="nav-item">
                     <button class="nav-link" tabindex="0">Project ▾</button>
                     <div class="dropdown">
@@ -396,7 +397,6 @@
                         <a href="#">Project 3</a>
                     </div>
                 </div>
-                <div class="nav-item"><a href="#" class="nav-link">Gallery</a></div>
                 <div class="nav-item"><a href="#" class="nav-link">Contact</a></div>
                 <div class="nav-item">
                     <button class="nav-link" tabindex="0">Pages ▾</button>
