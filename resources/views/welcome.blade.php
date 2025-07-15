@@ -40,6 +40,7 @@
             display: flex;
             gap: 30px;
             align-items: center;
+            padding-left: 2cm; /* Geser navbar ke kanan 2cm dari tepi kiri */
         }
         .nav-item {
             position: relative;
@@ -87,93 +88,104 @@
         }
         .dropdown a:hover {
             background: #eaf6e3;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            padding: 0 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 80px;
-            z-index: 2;
-            position: relative;
-        }
-        .logo {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #6a9739;
-            letter-spacing: 2px;
-        }
-        nav {
-            flex: 1;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            position: relative;
-        }
-        .nav-menu {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-        }
-        .nav-item {
-            position: relative;
-        }
-        .nav-link {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            padding: 8px 0;
-            transition: color 0.2s;
-            background: none;
-            border: none;
-            font-family: inherit;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        .nav-link:hover,
-        .nav-link.active {
             color: #6a9739;
         }
-        .nav-btn {
+        .cta-btn,
+        .nav-btn,
+        .about-btn,
+        .taste-section button {
             background: #ffd600;
             color: #333;
             font-weight: 700;
             border: none;
             border-radius: 8px;
-            padding: 12px 32px;
-            margin-left: 32px;
+            padding: 10px 24px;
             font-size: 1rem;
             cursor: pointer;
             box-shadow: 0 4px 16px rgba(255,214,0,0.12);
             transition: background 0.2s, color 0.2s, transform 0.2s;
+            margin-left: 1cm; /* Space 1cm antara Pages dan Get Started */
         }
-        .nav-btn:hover {
+        .cta-btn:hover,
+        .nav-btn:hover,
+        .about-btn:hover,
+        .taste-section button:hover {
             background: #ffe066;
             color: #6a9739;
             transform: scale(1.05);
         }
-        @media (max-width: 900px) {
-            header {
-                padding: 0 20px;
-            }
-            .nav-menu {
-                flex-direction: column;
-                position: absolute;
-                top: 80px;
-                left: 0;
-                right: 0;
-                background: #fff;
-                box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-                display: none;
-                width: 100%;
-                text-align: center;
-                gap: 0;
-            }
-            .nav-btn {
-                margin: 20px 0;
-                width: 80%;
+        @keyframes dropdownFade {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hero {
+            position: relative;
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+        }
+        .hero-bg img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            filter: brightness(0.7) saturate(1.1);
+            opacity: 0;
+            transform: scale(1.08);
+            animation: heroImgFade 1.2s 0.2s forwards;
+        }
+        @keyframes heroImgFade {
+            to {
+                opacity: 1;
+                transform: scale(1);
             }
         }
-    </style>
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            color: #fff;
+            text-align: left;
+            padding: 40px;
+            background: none;
+            box-shadow: none;
+            margin-left: 5vw;
+        }
+        .hero-content h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 1s 0.5s forwards;
+            text-shadow: 0 2px 16px rgba(0,0,0,0.18);
+        }
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 32px;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 1s 0.9s forwards;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.12);
+        }
+        .hero-content .cta-btn {
+            background:#6a9739;
+            color:#fff;
+            padding:14px 38px;
+            border-radius:8px;
+            text-decoration:none;
+            font-weight:700;
             font-size:1.15rem;
             box-shadow: 0 4px 16px rgba(106,151,57,0.12);
             transition: background 0.2s, transform 0.2s;
@@ -498,7 +510,7 @@
         <nav>
             <div class="nav-menu">
                 <div class="nav-item"><a href="/" class="nav-link">Home</a></div>
-                <div class="nav-item"><a href="/about" class="nav-link">About Us</a></div>
+                <div class="nav-item"><a href="#" class="nav-link">About Us</a></div>
                 <div class="nav-item"><a href="#" class="nav-link">Service</a></div>
                 <div class="nav-item">
                     <button class="nav-link" tabindex="0">Project ▾</button>
